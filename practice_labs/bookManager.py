@@ -6,7 +6,7 @@ books = []
 
 @app.route("/addBook/<bookname>/<author>")
 def addBook(bookname,author):
-    books.append({"bookname":bookname,"author":author})
+    books.append({"Nome do livro":bookname,"Autor":author})
     return "%s by %s appended" %(bookname,author)
 
 @app.route("/getBooks")
